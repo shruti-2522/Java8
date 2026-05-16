@@ -12,7 +12,8 @@ public class groupStringByTheirLength {
 
         List<String> fruits= Arrays.asList("Apple","Banana","Orange","Mango","Peer","grapes");
          Map<Integer,List<String>> groupsStrings=fruits.stream()
-                                                         .collect(Collectors.groupingBy(String::length));
+
+                 .collect(Collectors.groupingBy(String::length));
         System.out.println(groupsStrings);
 
     }

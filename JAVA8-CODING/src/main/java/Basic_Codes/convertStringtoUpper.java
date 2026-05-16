@@ -9,7 +9,8 @@ public class convertStringtoUpper {
 
     public static void main(String[] args) {
         List<String> names= Arrays.asList("shruti","sneha","pratik","manisha");
-        List<String> result=names.stream().map(String::toUpperCase).collect(Collectors.toList());
+        List<String> result=names.stream().map(String::toUpperCase)
+                .collect(Collectors.toList());
         System.out.println(result);
     }
 }
